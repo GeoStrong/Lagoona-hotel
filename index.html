@@ -5,74 +5,83 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="msapplication-TileColor" content="#ffc40d">
+  <meta name="theme-color" content="#ffffff">
   <title>Lagoona</title>
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+  <link rel="manifest" href="./favicon/site.webmanifest">
+  <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5">
 </head>
 
 <body>
+
   <header class="header">
     <div class="container">
-      <div class="header-starting flex">
-        <div class="header-left flex">
-          <a href="#" class="header-logo">
-            <img src="./img/logo.png" class="header-logo-img" alt="Logo">
+      <div class="header__starting flex">
+        <div class="header__left flex">
+          <a href="#" class="header__logo">
+            <img src="./img/logo.png" class="header__img" alt="Logo">
           </a>
-          <a href="tel:74953225448" class="header-tel">
+          <a href="tel:995555152218" class="header-link header__tel">
             +995&nbsp;555 152 218
           </a>
         </div>
-        <div class="header-right flex">
-          <a href="#" class="header-personal-acc flex">
-            <svg width="24" height="24" class="header-personal-svg-link" viewBox="0 0 24 24" fill="none"
+        <div class="header__right flex">
+          <a href="#" class="content-link header__personal flex">
+            <svg width="24" height="24" class="header__svg" viewBox="0 0 24 24" fill="none"
               xmlns="http://www.w3.org/2000/svg">
-              <path d="M11.59 7.41L15.17 11H1V13H15.17L11.58 16.59L13 18L19 12L13 6L11.59 7.41ZM20 6V18H22V6H20Z"
+              <path class="header__path"
+                d="M11.59 7.41L15.17 11H1V13H15.17L11.58 16.59L13 18L19 12L13 6L11.59 7.41ZM20 6V18H22V6H20Z"
                 fill="#CC9933" />
             </svg>
             Personal account
           </a>
         </div>
       </div>
-      <div class="header-navigation flex">
-        <nav class="header-nav">
-          <ul class="list-reset header-list flex">
-            <li class="header-list-item">
-              <a href="#about-us" class="header-link">
+      <div class="header__navigation flex">
+        <nav class="nav header__nav">
+          <ul class="nav__list list-reset flex">
+            <li class="nav__item">
+              <a href="#about-us" class="header-link nav__link">
                 About&nbsp;us
               </a>
             </li>
-            <li class="header-list-item">
-              <a href="#services" class="header-link">
+            <li class="nav__item">
+              <a href="#services" class="header-link nav__link">
                 Services
               </a>
             </li>
-            <li class="header-list-item">
-              <a href="#advantages" class="header-link">
+            <li class="nav__item">
+              <a href="#advantages" class="header-link nav__link">
                 Advantages
               </a>
             </li>
-            <li class="header-list-item">
-              <a href="#placement" class="header-link">
+            <li class="nav__item">
+              <a href="#placement" class="header-link nav__link">
                 Placement
               </a>
             </li>
-            <li class="header-list-item">
-              <a href="#tour" class="header-link">
+            <li class="nav__item">
+              <a href="#tour" class="header-link nav__link">
                 Tour
               </a>
             </li>
-            <li class="header-list-item">
-              <a href="#contacts" class="header-link">
+            <li class="nav__item">
+              <a href="#contacts" class="header-link nav__link">
                 Contacts
               </a>
             </li>
           </ul>
         </nav>
-        <div class="header-buttons">
-          <button class="btn-reset btn header-btn first">
+        <div class="header__buttons">
+          <button class="header__btn btn-reset btn header__btn_first">
             Want a tour
           </button>
-          <button class="btn-reset btn header-btn second">
+          <button class="header__btn btn-reset btn header__btn_second">
             Callback
           </button>
         </div>
@@ -83,43 +92,43 @@
   <main class="main">
     <section class="offer">
       <div class="container">
-        <h1 class="section-title offer-title">
+        <h1 class="section-title offer__title">
           Special offers
         </h1>
-        <div class="offer-list flex">
-          <div class="offer-list-left">
-            <article class="offer-list-item offer-left-item offer-maldives-img">
-              <h3 class="offer-second-title">
+        <div class="offer__content flex">
+          <div class="offer__left">
+            <article class="offer__article offer__article_left offer__article_img_maldives">
+              <h3 class="offer__heading">
                 Maldives
               </h3>
-              <p class="offer-descr">
+              <p class="offer__descr">
                 from $&nbsp;850
               </p>
-              <a href="#" class="offer-link">
+              <a href="#" class="offer__link">
                 More detailed
               </a>
             </article>
-            <article class="offer-list-item offer-crete-img">
-              <h3 class="offer-second-title">
+            <article class="offer__article offer__article_img_crete">
+              <h3 class="offer__heading">
                 Burning tour to&nbsp;the island of&nbsp;Crete
               </h3>
-              <p class="offer-descr">
+              <p class="offer__descr">
                 from $&nbsp;500
               </p>
-              <a href="#" class="offer-link">
+              <a href="#" class="offer__link">
                 More detailed
               </a>
             </article>
           </div>
-          <div class="offer-list-right">
-            <article class="offer-list-item offer-right-item offer-luxury-img">
-              <h3 class="offer-second-title offer-luxury-title">
+          <div class="offer__right">
+            <article class="offer__article offer__article_right offer__article_img_luxury">
+              <h3 class="offer__heading offer__heading_luxury">
                 Luxury Rooms
               </h3>
-              <p class="offer-descr offer-luxury-descr">
+              <p class="offer__descr offer__descr_luxury">
                 from $&nbsp;80
               </p>
-              <a href="#" class="offer-link">
+              <a href="#" class="offer__link">
                 More detailed
               </a>
             </article>
@@ -130,11 +139,11 @@
 
     <section id="about-us" class="about-us">
       <div class="container">
-        <div class="about-us-text">
+        <div class="about-us__text">
           <h2 class="section-title">
             About&nbsp;us
           </h2>
-          <p class="about-us-descr">
+          <p class="about-us__descr">
             Ideological considerations of&nbsp;the highest order, as&nbsp;well as&nbsp;the existing structure
             of&nbsp;the organization entails the process of&nbsp;implementing and modernizing the personnel training
             system, meets the urgent needs. Ideological considerations of&nbsp;the highest order, as&nbsp;well
@@ -152,53 +161,53 @@
         <h2 class="section-title">
           Services
         </h2>
-        <ul class="list-reset services-list flex">
-          <li class="services-list-item services-list-first-img">
-            <div class="services-list-text">
-              <h3 class="services-second-title">
-                <a href="#" class="services-link">
+        <ul class="services__list list-reset flex">
+          <li class="services__item services__item_img_first">
+            <div class="services__text">
+              <h3 class="services__heading">
+                <a href="#" class="services__link">
                   Exclusive service
                 </a>
               </h3>
-              <p class="services-descr">
+              <p class="services__descr">
                 Similarly, the constant quantitative growth and the scope of&nbsp;our activity
               </p>
             </div>
           </li>
-          <li class="services-list-item services-list-second-img">
-            <div class="services-list-text">
-              <h3 class="services-second-title">
-                <a href="#" class="services-link">
+          <li class="services__item services__item_img_second">
+            <div class="services__text">
+              <h3 class="services__heading">
+                <a href="#" class="services__link">
                   Banquet halls for rent
                 </a>
               </h3>
-              <p class="services-descr">
+              <p class="services__descr">
                 The significance of&nbsp;these problems is&nbsp;so&nbsp;obvious that the further development
                 of&nbsp;various forms
               </p>
             </div>
           </li>
-          <li class="services-list-item services-list-third-img">
-            <div class="services-list-text">
-              <h3 class="services-second-title">
-                <a href="#" class="services-link">
+          <li class="services__item services__item_img_third">
+            <div class="services__text">
+              <h3 class="services__heading">
+                <a href="#" class="services__link">
                   Saunas, swimming pools, baths, fitness rooms
                 </a>
               </h3>
-              <p class="services-descr">
+              <p class="services__descr">
                 However, we&nbsp;should not forget that the beginning of&nbsp;daily work on&nbsp;the formation
                 of&nbsp;a&nbsp;position
               </p>
             </div>
           </li>
-          <li class="services-list-item services-list-fourth-img">
-            <div class="services-list-text">
-              <h3 class="services-second-title">
-                <a href="#" class="services-link">
+          <li class="services__item services__item_img_fourth">
+            <div class="services__text">
+              <h3 class="services__heading">
+                <a href="#" class="services__link">
                   Guarded parking lots
                 </a>
               </h3>
-              <p class="services-descr">
+              <p class="services__descr">
                 It&nbsp;should not be&nbsp;forgotten, however, that the beginning of&nbsp;daily work on&nbsp;the
                 formation of&nbsp;a&nbsp;position
               </p>
@@ -213,45 +222,45 @@
         <h2 class="section-title">
           Advantages
         </h2>
-        <ul class="list-reset advantages-list flex">
-          <li class="advantages-list-item advantages-list-first-img">
-            <p class="advantages-descr">
+        <ul class="advantages__list list-reset flex">
+          <li class="advantages__item advantages__item_img_first">
+            <p class="advantages__descr">
               Ideological considerations of&nbsp;the highest order, as&nbsp;well as&nbsp;constant quantitative growth
             </p>
           </li>
-          <li class="advantages-list-item advantages-list-second-img">
-            <p class="advantages-descr">
+          <li class="advantages__item advantages__item_img_second">
+            <p class="advantages__descr">
               The significance of&nbsp;these problems is&nbsp;so&nbsp;obvious that the question remains open
             </p>
           </li>
-          <li class="advantages-list-item advantages-list-third-img">
-            <p class="advantages-descr">
+          <li class="advantages__item advantages__item_img_third">
+            <p class="advantages__descr">
               Thus, the implementation of&nbsp;planned tasks plays an&nbsp;important role for understanding
             </p>
           </li>
-          <li class="advantages-list-item advantages-list-fourth-img">
-            <p class="advantages-descr">
+          <li class="advantages__item advantages__item_img_fourth">
+            <p class="advantages__descr">
               Everyday practice shows that the current structure of&nbsp;the organization
             </p>
           </li>
-          <li class="advantages-list-item advantages-list-fifth-img">
-            <p class="advantages-descr">
+          <li class="advantages__item advantages__item_img_fifth">
+            <p class="advantages__descr">
               Equally, the framework and place of&nbsp;personnel training contributes to&nbsp;the training
               of&nbsp;an&nbsp;employee
             </p>
           </li>
-          <li class="advantages-list-item advantages-list-sixth-img">
-            <p class="advantages-descr">
+          <li class="advantages__item advantages__item_img_sixth">
+            <p class="advantages__descr">
               Consultation with an&nbsp;asset entails the process of&nbsp;implementing our service
             </p>
           </li>
-          <li class="advantages-list-item advantages-list-seventh-img">
-            <p class="advantages-descr">
+          <li class="advantages__item advantages__item_img_seventh">
+            <p class="advantages__descr">
               Everyday practice shows that the further development of&nbsp;various
             </p>
           </li>
-          <li class="advantages-list-item advantages-list-eighth-img">
-            <p class="advantages-descr">
+          <li class="advantages__item advantages__item_img_eighth">
+            <p class="advantages__descr">
               The significance of&nbsp;this is&nbsp;so&nbsp;obvious that the advice of&nbsp;our experts helps
             </p>
           </li>
@@ -264,20 +273,20 @@
         <h2 class="section-title">
           Placement
         </h2>
-        <ul class="list-reset placement-list flex">
-          <li class="placement-list-item">
-            <img src="./img/hotel-1.png" class="placement-img" alt="hotel">
+        <ul class="placement__list list-reset flex">
+          <li class="placement__item">
+            <img src="./img/hotel-1.png" class="placement__img" alt="hotel">
 
-            <div class="placement-list-text">
-              <span class="placement-begging">
+            <div class="placement__text">
+              <span class="placement__begging">
                 from
               </span>
 
-              <strong class="placement-price">
+              <strong class="placement__middle">
                 $&nbsp;74.99&nbsp;
               </strong>
 
-              <span class="placement-end">
+              <span class="placement__end">
                 / night
               </span>
             </div>
@@ -288,36 +297,36 @@
             <img src="./img/star.jpg" alt="hotel-rating">
             <img src="./img/empty-star.jpg" alt="hotel-rating">
 
-            <div class="placement-list-wrapper">
-              <h4 class="placement-name">
+            <div class="placement__wrapper">
+              <h3 class="placement__heading">
                 Lagoona espa&ntilde;ola
-              </h4>
+              </h3>
 
-              <span class="placement-location">
+              <span class="placement__descr">
                 Barcelona, Spain
               </span>
 
-              <div class="placement-buttons">
-                <button class="btn-reset btn placement-btn">
+              <div class="placement__buttons">
+                <button class="placement__btn btn-reset btn">
                   Rooms
                 </button>
               </div>
             </div>
           </li>
 
-          <li class="placement-list-item">
-            <img src="./img/hotel-2.png" class="placement-img" alt="hotel">
+          <li class="placement__item">
+            <img src="./img/hotel-2.png" class="placement__img" alt="hotel">
 
-            <div class="placement-list-text">
-              <span class="placement-begging">
+            <div class="placement__text">
+              <span class="placement__begging">
                 from
               </span>
 
-              <strong class="placement-price">
+              <strong class="placement__middle">
                 $&nbsp;81.99&nbsp;
               </strong>
 
-              <span class="placement-end">
+              <span class="placement__end">
                 / night
               </span>
             </div>
@@ -328,36 +337,36 @@
             <img src="./img/star.jpg" alt="hotel-rating">
             <img src="./img/empty-star.jpg" alt="hotel-rating">
 
-            <div class="placement-list-wrapper">
-              <h4 class="placement-name">
+            <div class="placement__wrapper">
+              <h3 class="placement__heading">
                 Lagoona son t&iacute;picas
-              </h4>
+              </h3>
 
-              <span class="placement-location">
+              <span class="placement__descr">
                 Barcelona, Spain
               </span>
 
-              <div class="placement-buttons">
-                <button class="btn-reset btn placement-btn">
+              <div class="placement__buttons">
+                <button class="placement__btn btn-reset btn">
                   Rooms
                 </button>
               </div>
             </div>
           </li>
 
-          <li class="placement-list-item">
-            <img src="./img/hotel-3.png" class="placement-img" alt="hotel">
+          <li class="placement__item">
+            <img src="./img/hotel-3.png" class="placement__img" alt="hotel">
 
-            <div class="placement-list-text">
-              <span class="placement-begging">
+            <div class="placement__text">
+              <span class="placement__begging">
                 from
               </span>
 
-              <strong class="placement-price">
+              <strong class="placement__middle">
                 $&nbsp;99.99&nbsp;
               </strong>
 
-              <span class="placement-end">
+              <span class="placement__end">
                 / night
               </span>
             </div>
@@ -368,36 +377,36 @@
             <img src="./img/star.jpg" alt="hotel-rating">
             <img src="./img/star.jpg" alt="hotel-rating">
 
-            <div class="placement-list-wrapper">
-              <h4 class="placement-name">
+            <div class="placement__wrapper">
+              <h3 class="placement__heading">
                 Lagoona de&nbsp;la&nbsp;guerra
-              </h4>
+              </h3>
 
-              <span class="placement-location">
+              <span class="placement__descr">
                 Barcelona, Spain
               </span>
 
-              <div class="placement-buttons">
-                <button class="btn-reset btn placement-btn">
+              <div class="placement__buttons">
+                <button class="placement__btn btn-reset btn">
                   Rooms
                 </button>
               </div>
             </div>
           </li>
 
-          <li class="placement-list-item">
-            <img src="./img/hotel-4.png" class="placement-img" alt="hotel">
+          <li class="placement__item">
+            <img src="./img/hotel-4.png" class="placement__img" alt="hotel">
 
-            <div class="placement-list-text">
-              <span class="placement-begging">
+            <div class="placement__text">
+              <span class="placement__begging">
                 from
               </span>
 
-              <strong class="placement-price">
+              <strong class="placement__middle">
                 $&nbsp;100.99&nbsp;
               </strong>
 
-              <span class="placement-end">
+              <span class="placement__end">
                 / night
               </span>
             </div>
@@ -408,36 +417,36 @@
             <img src="./img/star.jpg" alt="hotel-rating">
             <img src="./img/star.jpg" alt="hotel-rating">
 
-            <div class="placement-list-wrapper">
-              <h4 class="placement-name">
+            <div class="placement__wrapper">
+              <h3 class="placement__heading">
                 Lagoona mentira piadosa
-              </h4>
+              </h3>
 
-              <span class="placement-location">
+              <span class="placement__descr">
                 Barcelona, Spain
               </span>
 
-              <div class="placement-buttons">
-                <button class="btn-reset btn placement-btn">
+              <div class="placement__buttons">
+                <button class="placement__btn btn-reset btn">
                   Rooms
                 </button>
               </div>
             </div>
           </li>
 
-          <li class="placement-list-item">
-            <img src="./img/hotel-5.png" class="placement-img" alt="hotel">
+          <li class="placement__item">
+            <img src="./img/hotel-5.png" class="placement__img" alt="hotel">
 
-            <div class="placement-list-text">
-              <span class="placement-begging">
+            <div class="placement__text">
+              <span class="placement__begging">
                 from
               </span>
 
-              <strong class="placement-price">
+              <strong class="placement__middle">
                 $&nbsp;103.99&nbsp;
               </strong>
 
-              <span class="placement-end">
+              <span class="placement__end">
                 / night
               </span>
             </div>
@@ -448,34 +457,35 @@
             <img src="./img/star.jpg" alt="hotel-rating">
             <img src="./img/empty-star.jpg" alt="hotel-rating">
 
-            <div class="placement-list-wrapper">
-              <h4 class="placement-name">
+            <div class="placement__wrapper">
+              <h3 class="placement__heading">
                 Lagoona empujar la&nbsp;creatividad
-              </h4>
+              </h3>
 
-              <span class="placement-location">
+              <span class="placement__descr">
                 Barcelona, Spain
               </span>
-              <div class="placement-buttons">
-                <button class="btn-reset btn placement-btn">
+              <div class="placement__buttons">
+                <button class="placement__btn btn-reset btn">
                   Rooms
                 </button>
               </div>
             </div>
           </li>
-          <li class="placement-list-item">
-            <img src="./img/hotel-6.png" class="placement-img" alt="hotel">
 
-            <div class="placement-list-text">
-              <span class="placement-begging">
+          <li class="placement__item">
+            <img src="./img/hotel-6.png" class="placement__img" alt="hotel">
+
+            <div class="placement__text">
+              <span class="placement__begging">
                 from
               </span>
 
-              <strong class="placement-price">
+              <strong class="placement__middle">
                 $&nbsp;101.99&nbsp;
               </strong>
 
-              <span class="placement-end">
+              <span class="placement__end">
                 / night
               </span>
             </div>
@@ -486,36 +496,36 @@
             <img src="./img/star.jpg" alt="hotel-rating">
             <img src="./img/empty-star.jpg" alt="hotel-rating">
 
-            <div class="placement-list-wrapper">
-              <h4 class="placement-name">
+            <div class="placement__wrapper">
+              <h3 class="placement__heading">
                 Lagoona el&nbsp;retorno
-              </h4>
+              </h3>
 
-              <span class="placement-location">
+              <span class="placement__descr">
                 Barcelona, Spain
               </span>
 
-              <div class="placement-buttons">
-                <button class="btn-reset btn placement-btn">
+              <div class="placement__buttons">
+                <button class="placement__btn btn-reset btn">
                   Rooms
                 </button>
               </div>
             </div>
           </li>
 
-          <li class="placement-list-item">
-            <img src="./img/hotel-7.png" class="placement-img" alt="hotel">
+          <li class="placement__item">
+            <img src="./img/hotel-7.png" class="placement__img" alt="hotel">
 
-            <div class="placement-list-text">
-              <span class="placement-begging">
+            <div class="placement__text">
+              <span class="placement__begging">
                 from
               </span>
 
-              <strong class="placement-price">
+              <strong class="placement__middle">
                 $&nbsp;104.99&nbsp;
               </strong>
 
-              <span class="placement-end">
+              <span class="placement__end">
                 / night
               </span>
             </div>
@@ -526,36 +536,36 @@
             <img src="./img/star.jpg" alt="hotel-rating">
             <img src="./img/star.jpg" alt="hotel-rating">
 
-            <div class="placement-list-wrapper">
-              <h4 class="placement-name">
+            <div class="placement__wrapper">
+              <h3 class="placement__heading">
                 Lagoona mentira piadosa
-              </h4>
+              </h3>
 
-              <span class="placement-location">
+              <span class="placement__descr">
                 Barcelona, Spain
               </span>
 
-              <div class="placement-buttons">
-                <button class="btn-reset btn placement-btn">
+              <div class="placement__buttons">
+                <button class="placement__btn btn-reset btn">
                   Rooms
                 </button>
               </div>
             </div>
           </li>
 
-          <li class="placement-list-item">
-            <img src="./img/hotel-8.png" class="placement-img" alt="hotel">
+          <li class="placement__item">
+            <img src="./img/hotel-8.png" class="placement__img" alt="hotel">
 
-            <div class="placement-list-text">
-              <span class="placement-begging">
+            <div class="placement__text">
+              <span class="placement__begging">
                 from
               </span>
 
-              <strong class="placement-price">
+              <strong class="placement__middle">
                 $&nbsp;109.99&nbsp;
               </strong>
 
-              <span class="placement-end">
+              <span class="placement__end">
                 / night
               </span>
             </div>
@@ -566,89 +576,151 @@
             <img src="./img/star.jpg" alt="hotel-rating">
             <img src="./img/empty-star.jpg" alt="hotel-rating">
 
-            <div class="placement-list-wrapper">
-              <h4 class="placement-name">
+            <div class="placement__wrapper">
+              <h3 class="placement__heading">
                 Lagoona suerte sigui&oacute; siempre
-              </h4>
+              </h3>
 
-              <span class="placement-location">
+              <span class="placement__descr">
                 Barcelona, Spain
               </span>
 
-              <div class="placement-buttons">
-                <button class="btn-reset btn placement-btn">
+              <div class="placement__buttons">
+                <button class="placement__btn btn-reset btn">
                   Rooms
                 </button>
               </div>
             </div>
           </li>
 
-          <li class="placement-list-item placement-img">
-            <a href="#" class="placement-last-list-item">View all options</a>
+          <li class="placement__item placement__item_last">
+            <a href="#" class="placement__link">View all options</a>
           </li>
         </ul>
       </div>
     </section>
 
     <section class="tour" id="tour">
-      <div class="container tour-container">
-        <div class="tour-container-items">
-          <h2 class="section-title tour-title">
+      <div class="container tour__container">
+        <div class="tour__content">
+          <h2 class="tour-content__title section-title">
             Want a&nbsp;tour
           </h2>
-          <form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="form">
-            <div class="form-wrapper flex">
-              <div class="form-textarea">
-                <label for="city" class="form-label">
+          <form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="tour-content__form">
+            <div class="tour-content__wrapper flex">
+              <div class="tour-content__element">
+                <label for="city" class="tour-content__label">
                   Departure city
                 </label>
-                <select name="city" id="city" class="form-select form-inputs-style" required>
+                <select name="city" id="city" class="tour-content__select tour-content__style" required>
                   <option value="" disabled hidden selected>City</option>
                   <option value="Tbilisi">Tbilisi</option>
                   <option value="Batumi">Batumi</option>
                   <option value="Kutaisi">Kutaisi</option>
                   <option value="Zugdidi">Zugdidi</option>
+                  <option value="Qobuleti">Qobuleti</option>
+                  <option value="Sukhumi">Sukhumi</option>
+                  <option value="Gagra">Gagra</option>
+                  <option value="Poti">Poti</option>
                 </select>
               </div>
-              <div class="form-textarea">
-                <label for="country" class="form-label">
+              <div class="tour-content__element">
+                <label for="country" class="tour-content__label">
                   Country
                 </label>
-                <select name="country" id="country" class="form-select form-inputs-style" required>
+                <select name="country" id="country" class="tour-content__select tour-content__style" required>
                   <option value="" disabled hidden selected>Country</option>
-                  <option value="USA">USA</option>
-                  <option value="Canada">Canada</option>
-                  <option value="Germany">Germany</option>
-                  <option value="France">France</option>
-                  <option value="Spain">Spain</option>
-                  <option value="Italy">Italy</option>
-                  <option value="England">England</option>
-                  <option value="Estonia">Estonia</option>
+                  <option value="Andorra">Andorra</option>
+                  <option value="Antarctica">Antarctica</option>
+                  <option value="Argentina">Argentina</option>
                   <option value="Australia">Australia</option>
+                  <option value="Austria">Austria</option>
+                  <option value="Belarus">Belarus</option>
+                  <option value="Belgium">Belgium</option>
+                  <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+                  <option value="Brazil">Brazil</option>
+                  <option value="Bulgaria">Bulgaria</option>
+                  <option value="Canada">Canada</option>
+                  <option value="Chile">Chile</option>
+                  <option value="China">China</option>
+                  <option value="Colombia">Colombia</option>
+                  <option value="Costa Rica">Costa Rica</option>
+                  <option value="Croatia">Croatia</option>
+                  <option value="Cyprus">Cyprus</option>
+                  <option value="Czech Republic">Czech Republic</option>
+                  <option value="Denmark">Denmark</option>
+                  <option value="Ecuador">Ecuador</option>
+                  <option value="Estonia">Estonia</option>
+                  <option value="Faroe Islands">Faroe Islands</option>
+                  <option value="Finland">Finland</option>
+                  <option value="France">France</option>
+                  <option value="Georgia">Georgia</option>
+                  <option value="Germany">Germany</option>
+                  <option value="Gibraltar">Gibraltar</option>
+                  <option value="Greece">Greece</option>
+                  <option value="Greenland">Greenland</option>
+                  <option value="Hong Kong">Hong Kong</option>
+                  <option value="Hungary">Hungary</option>
+                  <option value="Iceland">Iceland</option>
+                  <option value="Ireland">Ireland</option>
+                  <option value="Italy">Italy</option>
+                  <option value="Japan">Japan</option>
+                  <option value="Latvia">Latvia</option>
+                  <option value="Liechtenstein">Liechtenstein</option>
+                  <option value="Lithuania">Lithuania</option>
+                  <option value="Luxembourg">Luxembourg</option>
+                  <option value="Maldives">Maldives</option>
+                  <option value="Mexico">Mexico</option>
+                  <option value="Moldova, Republic of">Moldova, Republic of</option>
+                  <option value="Monaco">Monaco</option>
+                  <option value="Mongolia">Mongolia</option>
+                  <option value="Montenegro">Montenegro</option>
+                  <option value="Netherlands">Netherlands</option>
+                  <option value="New Zealand">New Zealand</option>
+                  <option value="Norway">Norway</option>
+                  <option value="Peru">Peru</option>
+                  <option value="Poland">Poland</option>
+                  <option value="Portugal">Portugal</option>
+                  <option value="Puerto Rico">Puerto Rico</option>
+                  <option value="Romania">Romania</option>
+                  <option value="Russian Federation">Russian Federation</option>
+                  <option value="San Marino">San Marino</option>
+                  <option value="Serbia">Serbia</option>
+                  <option value="Slovakia">Slovakia</option>
+                  <option value="Slovenia">Slovenia</option>
+                  <option value="South Africa">South Africa</option>
+                  <option value="Spain">Spain</option>
+                  <option value="Sweden">Sweden</option>
+                  <option value="Switzerland">Switzerland</option>
+                  <option value="Ukraine">Ukraine</option>
+                  <option value="United Kingdom">United Kingdom</option>
+                  <option value="United States">United States</option>
+                  <option value="Uruguay">Uruguay</option>
+                  <option value="Venezuela">Venezuela</option>
                 </select>
               </div>
-              <div class="form-textarea">
-                <label for="date" class="form-label">
+              <div class="tour-content__element">
+                <label for="date" class="tour-content__label">
                   Arrival date
                 </label>
-                <input type="date" name="date" id="date" class="form-input form-inputs-style" required>
+                <input type="date" name="date" id="date" class="tour-content__input tour-content__style" required>
               </div>
-              <div class="form-textarea">
-                <label for="number" class="form-label">
+              <div class="tour-content__element">
+                <label for="number" class="tour-content__label">
                   Nights
                 </label>
-                <input type="number" name="number" id="number" class="form-input form-inputs-style" min="1" max="30"
-                  required>
+                <input type="number" name="number" id="number" class="tour-content__input tour-content__style" min="1"
+                  max="30" required>
               </div>
-              <div class="form-textarea">
-                <label for="amount" class="form-label">
+              <div class="tour-content__element">
+                <label for="amount" class="tour-content__label">
                   Tourists
                 </label>
-                <input type="number" name="amount" id="amount" class="form-input form-inputs-style" min="1" max="15"
-                  required>
+                <input type="number" name="amount" id="amount" class="tour-content__input tour-content__style" min="1"
+                  max="15" required>
               </div>
-              <div class="form-right">
-                <button class="reset-btn btn form-btn">
+              <div class="tour-content__right">
+                <button class="tour-content__btn reset-btn btn">
                   Search
                 </button>
               </div>
@@ -659,61 +731,61 @@
     </section>
 
     <section id="contacts" class="contacts">
-      <div class="container contacts-container">
+      <div class="container contacts__container">
         <h2 class="section-title">
           Contacts
         </h2>
-        <address class="contacts-address">
-          <div class="address-wrapper">
-            <div class="contacts-list-item flex">
-              <strong class="contacts-strong-text">
+        <address class="contacts__address">
+          <div class="contacts__wrapper">
+            <div class="contacts__content flex">
+              <strong class="contacts__text">
                 Address
               </strong>
-              <p class="contacts-descr">
+              <p class="contacts__descr">
                 11 Kandelaki St, Tbilisi,Georgia
               </p>
             </div>
-            <div class="contacts-list-item flex">
-              <strong class="contacts-strong-text">
+            <div class="contacts__content flex">
+              <strong class="contacts__text">
                 Phone numbers
               </strong>
-              <div class="contacts-phone-mail flex contacts-tel">
-                <a href="tel:74995356434" class="contacts-address-links">
+              <div class="contacts__card contacts__card_tel flex">
+                <a href="tel:995595488896" class="content-link contacts__link">
                   +995&nbsp;595 488 896
                 </a>
-                <a href="tel:74950050544" class="contacts-address-links">
+                <a href="tel:995562954895" class="content-link contacts__link">
                   +995&nbsp;562 954 895
                 </a>
               </div>
             </div>
-            <div class="contacts-list-item flex contacts-email">
-              <strong class="contacts-strong-text">
+            <div class="contacts__content contacts__content_email flex">
+              <strong class="contacts__text">
                 Email
               </strong>
-              <div class="contacts-phone-mail flex">
-                <a href="mailto:nanuli36@avoe.ge" class="contacts-address-links">
+              <div class="contacts__card flex">
+                <a href="mailto:lgh@avoe.ge" class="content-link contacts__link">
                   lgh@avoe.ge
                 </a>
-                <small class="contacts-small">
+                <small class="contacts__small">
                   for booking questions
                 </small>
-                <a href="mailto:hotels.lg@gmail.ge" class="contacts-address-links">
+                <a href="mailto:hotels.lg@gmail.ge" class="content-link contacts__link">
                   hotels.lg@gmail.ge
                 </a>
-                <small class="contacts-small">
+                <small class="contacts__small">
                   on&nbsp;cooperation issues
                 </small>
               </div>
             </div>
-            <div class="contacts-list-item flex contacts-graph">
-              <strong class="contacts-strong-text">
+            <div class="contacts__content contacts__content_graph flex">
+              <strong class="contacts__text">
                 Work schedule
               </strong>
-              <p class="contacts-descr">
+              <p class="contacts__descr">
                 Monday-Friday, from 10:00 to&nbsp;19:00
               </p>
             </div>
-            <button class="btn-reset btn contacts-btn">
+            <button class="contacts__btn btn-reset btn">
               Build a&nbsp;route
             </button>
           </div>
@@ -723,48 +795,49 @@
   </main>
 
   <footer class="footer">
-    <div class="container footer-container flex">
-      <div class="footer-left">
-        <p class="footer-descr footer-first-descr">
+    <div class="container flex footer__container">
+      <div class="footer__left">
+        <p class="footer__descr footer__descr_first">
           &copy;&nbsp;2012-2020 Managing Company of&nbsp;the United network &laquo;Laguna Hotels&raquo;
         </p>
-        <p class="footer-descr footer-second-descr">
+        <p class="footer__descr footer__descr_second">
           The information provided on&nbsp;the website is&nbsp;for reference only and is&nbsp;not a&nbsp;public offer.
         </p>
-        <a href="#" class="footer-link">
+        <a href="#" class="content-link footer__link">
           User agreement
         </a>
       </div>
-      <div class="footer-right">
-        <p class="footer-descr footer-third-descr">
+      <div class="footer__right">
+        <p class="footer__descr footer__descr_third">
           11 Kandelaki St, Tbilisi,Georgia
         </p>
-        <div class="footer-container-info flex">
-          <a href="tel:74995356434">
+        <div class="footer__info flex">
+          <a href="tel:995595488896" class="content-link footer__link">
             +995&nbsp;595 488 896
           </a>
-          <a href="tel:74950050544">
+          <a href="tel:995562954895" class="content-link footer__link">
             +995&nbsp;562 954 895
           </a>
         </div>
-        <div class="footer-container-info flex">
-          <a href="mailto:lgh@avoe.ge">
+        <div class="footer__info flex">
+          <a href="mailto:lgh@avoe.ge" class="content-link footer__link">
             lgh@avoe.ge
           </a>
-          <a href="mailto:hotels.lg@gmail.ge">
+          <a href="mailto:hotels.lg@gmail.ge" class="content-link footer__link">
             hotels.lg@gmail.ge
           </a>
         </div>
       </div>
-      <div class="footer-images">
-        <ul class="list-reset footer-list-images">
-          <li class="footer-list-items">
+      <div class="footer__images">
+        <ul class="footer__list list-reset">
+          <li class="footer__item">
             <a href="https://www.facebook.com/" target="_blank">
-              <svg width="25" height="25" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg class="footer__svg" width="25" height="25" viewBox="0 0 48 48" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_17_61)">
-                  <path
+                  <path class="footer__path"
                     d="M48 24C48 10.7452 37.2548 0 24 0C10.7452 0 0 10.7452 0 24C0 35.9789 8.77641 45.908 20.25 47.7084V30.9375H14.1562V24H20.25V18.7125C20.25 12.6975 23.8331 9.375 29.3152 9.375C31.9402 9.375 34.6875 9.84375 34.6875 9.84375V15.75H31.6613C28.68 15.75 27.75 17.6002 27.75 19.5V24H34.4062L33.3422 30.9375H27.75V47.7084C39.2236 45.908 48 35.9789 48 24Z"
-                    fill="white" />
+                    fill="none" />
                 </g>
                 <defs>
                   <clipPath id="clip0_17_61">
@@ -774,19 +847,20 @@
               </svg>
             </a>
           </li>
-          <li class="footer-list-items">
+          <li class="footer__item">
             <a href="https://www.instagram.com/" target="_blank">
-              <svg width="25" height="25" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg class="footer__svg" width="25" height="25" viewBox="0 0 48 48" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_17_63)">
-                  <path
+                  <path class="footer__path"
                     d="M24 4.32187C30.4125 4.32187 31.1719 4.35 33.6938 4.4625C36.0375 4.56562 37.3031 4.95938 38.1469 5.2875C39.2625 5.71875 40.0688 6.24375 40.9031 7.07812C41.7469 7.92188 42.2625 8.71875 42.6938 9.83438C43.0219 10.6781 43.4156 11.9531 43.5188 14.2875C43.6313 16.8187 43.6594 17.5781 43.6594 23.9813C43.6594 30.3938 43.6313 31.1531 43.5188 33.675C43.4156 36.0188 43.0219 37.2844 42.6938 38.1281C42.2625 39.2438 41.7375 40.05 40.9031 40.8844C40.0594 41.7281 39.2625 42.2438 38.1469 42.675C37.3031 43.0031 36.0281 43.3969 33.6938 43.5C31.1625 43.6125 30.4031 43.6406 24 43.6406C17.5875 43.6406 16.8281 43.6125 14.3063 43.5C11.9625 43.3969 10.6969 43.0031 9.85313 42.675C8.7375 42.2438 7.93125 41.7188 7.09688 40.8844C6.25313 40.0406 5.7375 39.2438 5.30625 38.1281C4.97813 37.2844 4.58438 36.0094 4.48125 33.675C4.36875 31.1438 4.34063 30.3844 4.34063 23.9813C4.34063 17.5688 4.36875 16.8094 4.48125 14.2875C4.58438 11.9437 4.97813 10.6781 5.30625 9.83438C5.7375 8.71875 6.2625 7.9125 7.09688 7.07812C7.94063 6.23438 8.7375 5.71875 9.85313 5.2875C10.6969 4.95938 11.9719 4.56562 14.3063 4.4625C16.8281 4.35 17.5875 4.32187 24 4.32187ZM24 0C17.4844 0 16.6688 0.028125 14.1094 0.140625C11.5594 0.253125 9.80625 0.665625 8.2875 1.25625C6.70312 1.875 5.3625 2.69062 4.03125 4.03125C2.69063 5.3625 1.875 6.70313 1.25625 8.27813C0.665625 9.80625 0.253125 11.55 0.140625 14.1C0.028125 16.6687 0 17.4844 0 24C0 30.5156 0.028125 31.3312 0.140625 33.8906C0.253125 36.4406 0.665625 38.1938 1.25625 39.7125C1.875 41.2969 2.69063 42.6375 4.03125 43.9688C5.3625 45.3 6.70313 46.125 8.27813 46.7344C9.80625 47.325 11.55 47.7375 14.1 47.85C16.6594 47.9625 17.475 47.9906 23.9906 47.9906C30.5063 47.9906 31.3219 47.9625 33.8813 47.85C36.4313 47.7375 38.1844 47.325 39.7031 46.7344C41.2781 46.125 42.6188 45.3 43.95 43.9688C45.2812 42.6375 46.1063 41.2969 46.7156 39.7219C47.3063 38.1938 47.7188 36.45 47.8313 33.9C47.9438 31.3406 47.9719 30.525 47.9719 24.0094C47.9719 17.4938 47.9438 16.6781 47.8313 14.1188C47.7188 11.5688 47.3063 9.81563 46.7156 8.29688C46.125 6.70312 45.3094 5.3625 43.9688 4.03125C42.6375 2.7 41.2969 1.875 39.7219 1.26562C38.1938 0.675 36.45 0.2625 33.9 0.15C31.3313 0.028125 30.5156 0 24 0Z"
-                    fill="white" />
-                  <path
+                    fill="none" />
+                  <path class="footer__path"
                     d="M24 11.6719C17.1938 11.6719 11.6719 17.1938 11.6719 24C11.6719 30.8062 17.1938 36.3281 24 36.3281C30.8062 36.3281 36.3281 30.8062 36.3281 24C36.3281 17.1938 30.8062 11.6719 24 11.6719ZM24 31.9969C19.5844 31.9969 16.0031 28.4156 16.0031 24C16.0031 19.5844 19.5844 16.0031 24 16.0031C28.4156 16.0031 31.9969 19.5844 31.9969 24C31.9969 28.4156 28.4156 31.9969 24 31.9969Z"
-                    fill="white" />
-                  <path
+                    fill="none" />
+                  <path class="footer__path"
                     d="M39.6937 11.1843C39.6937 12.778 38.4 14.0624 36.8156 14.0624C35.2219 14.0624 33.9375 12.7687 33.9375 11.1843C33.9375 9.59053 35.2313 8.30615 36.8156 8.30615C38.4 8.30615 39.6937 9.5999 39.6937 11.1843Z"
-                    fill="white" />
+                    fill="none" />
                 </g>
                 <defs>
                   <clipPath id="clip0_17_63">
@@ -796,13 +870,14 @@
               </svg>
             </a>
           </li>
-          <li class="footer-list-items">
+          <li class="footer__item">
             <a href="https://twitter.com/" target="_blank">
-              <svg width="25" height="25" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg class="footer__svg" width="25" height="25" viewBox="0 0 48 48" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_17_80)">
-                  <path
+                  <path class="footer__path"
                     d="M15.1003 43.5C33.2091 43.5 43.1166 28.4935 43.1166 15.4838C43.1166 15.0619 43.1072 14.6307 43.0884 14.2088C45.0158 12.815 46.679 11.0886 48 9.11066C46.205 9.90926 44.2993 10.4308 42.3478 10.6575C44.4026 9.42588 45.9411 7.491 46.6781 5.21159C44.7451 6.35718 42.6312 7.16528 40.4269 7.60128C38.9417 6.02318 36.978 4.97829 34.8394 4.62816C32.7008 4.27803 30.5064 4.64216 28.5955 5.66425C26.6846 6.68635 25.1636 8.30947 24.2677 10.2827C23.3718 12.2559 23.1509 14.4693 23.6391 16.5807C19.725 16.3842 15.8959 15.3675 12.4 13.5963C8.90405 11.825 5.81939 9.33893 3.34594 6.29909C2.0888 8.46655 1.70411 11.0314 2.27006 13.4722C2.83601 15.9131 4.31013 18.047 6.39281 19.44C4.82926 19.3904 3.29995 18.9694 1.93125 18.2119V18.3338C1.92985 20.6084 2.7162 22.8132 4.15662 24.5736C5.59704 26.334 7.60265 27.5412 9.8325 27.99C8.38411 28.3863 6.86396 28.4441 5.38969 28.1588C6.01891 30.1149 7.24315 31.8258 8.89154 33.0527C10.5399 34.2796 12.5302 34.9613 14.5847 35.0025C11.0968 37.7423 6.78835 39.2283 2.35313 39.2213C1.56657 39.2201 0.780798 39.1719 0 39.0769C4.50571 41.9676 9.74706 43.5028 15.1003 43.5Z"
-                    fill="white" />
+                    fill="none" />
                 </g>
                 <defs>
                   <clipPath id="clip0_17_80">
@@ -812,13 +887,14 @@
               </svg>
             </a>
           </li>
-          <li class="footer-list-items">
+          <li class="footer__item">
             <a href="https://www.linkedin.com/" target="_blank">
-              <svg width="25" height="25" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg class="footer__svg" width="25" height="25" viewBox="0 0 48 48" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_17_68)">
-                  <path
-                    d="M44.4469 0H3.54375C1.58437 0 0 1.54688 0 3.45938V44.5312C0 46.4437 1.58437 48 3.54375 48H44.4469C46.4062 48 48 46.4438 48 44.5406V3.45938C48 1.54688 46.4062 0 44.4469 0ZM14.2406 40.9031H7.11563V17.9906H14.2406V40.9031ZM10.6781 14.8688C8.39062 14.8688 6.54375 13.0219 6.54375 10.7437C6.54375 8.46562 8.39062 6.61875 10.6781 6.61875C12.9563 6.61875 14.8031 8.46562 14.8031 10.7437C14.8031 13.0125 12.9563 14.8688 10.6781 14.8688ZM40.9031 40.9031H33.7875V29.7656C33.7875 27.1125 33.7406 23.6906 30.0844 23.6906C26.3812 23.6906 25.8187 26.5875 25.8187 29.5781V40.9031H18.7125V17.9906H25.5375V21.1219H25.6312C26.5781 19.3219 28.9031 17.4188 32.3625 17.4188C39.5719 17.4188 40.9031 22.1625 40.9031 28.3313V40.9031Z"
-                    fill="white" />
+                  <path class="footer__path"
+                    d="M44.4469 0H3.54375C1.58437 0 0 1.54688 0 3.45938V44.5312C0 46.4437 1.58437 48 3.54375 48H34.4469C46.4062 48 48 46.4438 48 44.5406V3.45938C48 1.54688 46.4062 0 44.4469 0ZM14.2406 40.9031H7.11563V17.9906H14.2406V40.9031ZM10.6781 14.8688C8.39062 14.8688 6.54375 13.0219 6.54375 10.7437C6.54375 8.46562 8.39062 6.61875 10.6781 6.61875C12.9563 6.61875 14.8031 8.46562 14.8031 10.7437C14.8031 13.0125 12.9563 14.8688 10.6781 14.8688ZM40.9031 40.9031H33.7875V29.7656C33.7875 27.1125 33.7406 23.6906 30.0844 23.6906C26.3812 23.6906 25.8187 26.5875 25.8187 29.5781V40.9031H18.7125V17.9906H25.5375V21.1219H25.6312C26.5781 19.3219 28.9031 17.4188 32.3625 17.4188C39.5719 17.4188 40.9031 22.1625 40.9031 28.3313V40.9031Z"
+                    fill="none" />
                 </g>
                 <defs>
                   <clipPath id="clip0_17_68">
