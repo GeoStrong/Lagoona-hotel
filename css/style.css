@@ -346,7 +346,6 @@ body {
 }
 
 .offer__link {
-  /* position: relative; */
   font-size: 16px;
   line-height: 16px;
   color: var(--color-light-orange);
@@ -354,29 +353,15 @@ body {
   background-position: right center;
   background-repeat: no-repeat;
   padding-right: 15px;
+  transition: color 0.3s ease-in-out;
 }
-
-/* .offer__link::after {
-  content: "";
-  top: 0px;
-  bottom: 0px;
-  right: 0px;
-  left: 0px;
-  position: absolute;
-  border: 1px solid var(--color-orange);
-  opacity: 0;
-}
-
-.offer__link:hover::after .offer__article {
-  opacity: 1;
-} */
 
 .offer__link:hover {
   color: var(--color-orange)
 }
 
 .offer__link:active {
-  color: var(--color-dark-orange)
+  color: var(--color-white)
 }
 
 /* about-us */
@@ -444,6 +429,15 @@ body {
   background-position: right center;
   background-repeat: no-repeat;
   padding-right: 20px;
+  transition: color 0.3s ease-in-out;
+}
+
+.services__link:hover {
+  color: var(--color-light-orange)
+}
+
+.services__link:active {
+  color: var(--color-dark-orange)
 }
 
 .services__descr {
@@ -598,6 +592,18 @@ body {
   background-position: right center;
   background-repeat: no-repeat;
   padding-right: 20px;
+}
+
+.placement__link:focus {
+  color: var(--color-orange);
+}
+
+.placement__link:hover {
+  color: var(--color-light-orange);
+}
+
+.placement__link:active {
+  color: var(--color-dark-orange);
 }
 
 .placement__link::before {
